@@ -1,0 +1,81 @@
+:root {
+    --black: #4d4c59;
+    --purple: #6c63ff;
+    --light-grey: #c8c8c8;
+    --text-color: #9c9ab6;
+    --font: "Poppins", sans-serif;
+}
+
+.user-registration-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    left: 0;
+}
+.user-registration-container-active {
+    opacity: 0;
+
+    transition: all 0.3s ease;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.user-registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+#user-registration-form-title {
+    font-family: var(--font);
+    color: white;
+    font-size: 35px;
+    margin: 30px;
+}
+
+.user-registration-form-tag {
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+.user-registration-form-input {
+    font-family: var(--font);
+    border: none;
+    border-radius: 8px;
+    height: 28px;
+    width: 550px;
+}
+
+.user-registration-form-button {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 160px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--purple);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .user-registration-form-input {
+        width: 80vw;
+    }
+}

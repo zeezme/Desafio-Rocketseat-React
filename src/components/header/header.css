@@ -1,0 +1,8 @@
+.header-container {
+    background-image: url('../../assets/top-image.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+
+}

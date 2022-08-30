@@ -1,0 +1,18 @@
+.footer-container {
+    background-image: url("../../assets/bottom-image.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-position: bottom;
+    z-index: -2;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        opacity: 0;
+    }
+}
