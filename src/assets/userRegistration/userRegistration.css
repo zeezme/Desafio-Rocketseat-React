@@ -11,19 +11,22 @@
     height: 100vh;
     position: absolute;
     bottom: 0;
-    background-color: var(--purple);
+    background-color: #f9f8fd;
     display: flex;
     align-items: center;
     justify-items: center;
     margin: 0;
     padding: 0;
-    transition: all 0.3s ease;
     left: 0;
+    background-image: url('../bottom-image.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 .user-registration-container-active {
     opacity: 0;
 
-    transition: all 0.3s ease;
+
     left: 0;
     position: absolute;
     z-index: -1;
@@ -35,11 +38,12 @@
     justify-items: center;
     width: 100vw;
     height: 50vh;
+
 }
 
 #user-registration-form-title {
     font-family: var(--font);
-    color: white;
+    color: var(--purple);
     font-size: 35px;
     margin: 30px;
 }
@@ -49,24 +53,26 @@
     font-weight: 500;
     font-size: 20px;
     margin: 10px;
-    color: white;
+    color: var(--purple);
 }
 .user-registration-form-input {
     font-family: var(--font);
-    border: none;
-    border-radius: 8px;
     height: 28px;
     width: 550px;
+    border-style: solid;
+    border-style: none;
+    background-color: #bcb8f8;
+    border-radius: 5px;
 }
 
 .user-registration-form-button {
-    background-color: white;
+    background-color: var(--purple);
     border: none;
     height: 40px;
     width: 160px;
     border-radius: 10px;
     text-align: center;
-    color: var(--purple);
+    color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -77,5 +83,8 @@
 @media (max-width: 600px) {
     .user-registration-form-input {
         width: 80vw;
+    }
+    .user-registration-container {
+
     }
 }

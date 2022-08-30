@@ -6,13 +6,15 @@ import UserRegistration from '../../assets/userRegistration/UserRegistration'
 
 
 export default function Countdown() {
-    const [daysLeft, setDaysLeft] = useState();
-    const [hoursLeft, setHoursLeft] = useState();
-    const [minsLeft, setMinsLeft] = useState();
-    const [secsLeft, setSecsLeft] = useState();
+    const [daysLeft, setDaysLeft] = useState('00');
+    const [hoursLeft, setHoursLeft] = useState('00');
+    const [minsLeft, setMinsLeft] = useState('00');
+    const [secsLeft, setSecsLeft] = useState('00');
     const [hasEnded, setHasEnded] = useState();
     const [buttonState, setButtonState] = useState('false');
-    const targetDate = '08/30/2022'
+    
+    //Set the final day here
+    const targetDate = '08/31/2022'
 
 
     useEffect(() => {
@@ -36,7 +38,7 @@ export default function Countdown() {
     }, [hasEnded]);
 
     const handleSubscribeButton = () => {
-        return buttonState ? (setButtonState(!buttonState), console.log(buttonState)) : (setButtonState(!buttonState), console.log(buttonState))
+        return buttonState ? setButtonState(!buttonState) : setButtonState(!buttonState)
     }
     const handleExitButton = () => {
         return buttonState ? 'countdown-close-button-active' : 'countdown-close-button'
