@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { countdown } from "../../services/getCountdown";
+import { countdown } from "../../helpers/getCountdown";
 import "./countdown.css";
 import UserRegistration from '../userRegistration/UserRegistration'
 
