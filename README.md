@@ -1,5 +1,5 @@
 <h1> Desafio Countdown</h1>
-<ins><b>(EM FINALIZAÇÃO)</b></ins>
+
 
 <br/>
 <br/>
