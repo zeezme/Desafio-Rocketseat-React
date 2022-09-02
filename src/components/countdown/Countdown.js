@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { countdown } from "../../services/getCountdown";
 import "./countdown.css";
-import UserRegistration from '../../assets/userRegistration/UserRegistration'
+import UserRegistration from '../userRegistration/UserRegistration'
 
 
 
@@ -14,7 +14,7 @@ export default function Countdown() {
     const [buttonState, setButtonState] = useState('false');
     
     //Set the final day here
-    const targetDate = '08/31/2022'
+    const targetDate = '09/02/2022'
 
 
     useEffect(() => {

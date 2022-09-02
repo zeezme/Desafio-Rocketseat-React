@@ -18,15 +18,13 @@
     margin: 0;
     padding: 0;
     left: 0;
-    background-image: url('../bottom-image.svg');
+    background-image: url("../../assets/bottom-image.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
 }
 .user-registration-container-active {
     opacity: 0;
-
-
     left: 0;
     position: absolute;
     z-index: -1;
@@ -38,7 +36,6 @@
     justify-items: center;
     width: 100vw;
     height: 50vh;
-
 }
 
 #user-registration-form-title {
@@ -58,11 +55,15 @@
 .user-registration-form-input {
     font-family: var(--font);
     height: 28px;
-    width: 550px;
+    width: 400px;
     border-style: solid;
     border-style: none;
     background-color: #bcb8f8;
     border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0a065c;
 }
 
 .user-registration-form-button {
@@ -83,8 +84,5 @@
 @media (max-width: 600px) {
     .user-registration-form-input {
         width: 80vw;
-    }
-    .user-registration-container {
-
     }
 }
