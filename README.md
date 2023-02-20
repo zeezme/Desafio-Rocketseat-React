@@ -5,7 +5,7 @@
 
 <h2> Alterações: </h2>
 <ul>
-  <li> Com o intuito de proporcionar uma melhor experiência ao usuário final, utilizou-se a library React.</li>
+  <li> Com o intuito de proporcionar uma melhor experiência ao usuário final, utilizou-se React JS.</li>
   <li> A página agora é responsiva e funciona em dispositivos mobile. </li>
 </ul>
 
